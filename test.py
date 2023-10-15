@@ -8,9 +8,13 @@ if producto <= 1000:
   print('El producto de los numeros es', producto)
 else:
   producto = number1 + number2
-  if producto > 1000 & producto < 2000:
-
-    print ('\nEl resultado del producto es:', producto, '\n')
-  else:
-    print ("No se cumple la condicion")
+  print ('\nEl resultado del producto es:', producto, '\n')
   
+  
+if producto < 1000:
+  print('Producto menor que 1000')
+  
+elif (producto >= 100) & (producto <= 2000):
+  print('Producto mayor que 1000 y menor que 2001')
+else :
+  print('Producto MAYOR que 2001')
