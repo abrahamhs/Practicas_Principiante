@@ -3,7 +3,6 @@
 
 str = input('Escriba una Palabra de mas de 6 letras\n')
 
-if (len(str)>= 6 ):
-  for i in range(0,len(str)):
-    if (i%2==0):
-      print(str[i])
+for i in range(0,len(str)): # se crea un loop con el tamaño del string
+  if (i%2==0): # si el modulo del indice es 0 se imprime 
+    print(str[i])
