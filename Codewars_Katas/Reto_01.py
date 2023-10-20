@@ -6,14 +6,15 @@ and returns the same string, but with all five or more letter words
  when more than one word is present."""
 
 def spin_words(sentence):
-    str = sentence.split()
-    str_temp = []
-    for i in str:
-        if len(i) >= 5:
-            str_temp.append(i[::-1])
+    str = sentence.split() # divido la oracion en palabras
+    str_temp = [] # creo una lista vacia para almacenar las palabras
+    for i in str: # itero las palabras
+        if len(i) >= 5: 
+            str_temp.append(i[::-1])  # palabra que hay que girar
         elif len(i) < 5:
-            str_temp.append(i)
-    mystr = " ".join(str_temp)
+            str_temp.append(i) # palabra sin girar
+    mystr = " ".join(str_temp) # unos cada palabra de la lista con espacio
     return mystr
+# Test cases
 test_Str = input('Introduce un Comentario \n\n')
 print(f'\n{spin_words(test_Str)}\n')
