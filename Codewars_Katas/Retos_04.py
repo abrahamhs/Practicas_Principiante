@@ -29,7 +29,8 @@ import re
 def to_camel_case(text):
     # para el reto de codewarrior la funcion pide evaluar si la cadena es esta vacia
     if not text:
-        return None
+        text += ''
+        return text
     
     # la linea de codigo siguiente depende de la libreria (re) que hay que importar
     # busca [-_], remplaza por " ", en la cadena: text
