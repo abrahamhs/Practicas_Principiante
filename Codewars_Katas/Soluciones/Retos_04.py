@@ -24,36 +24,39 @@ Ejemplos:
 """
 
 
-# Defino el nombre de la funcion
+# Defino el nombre de la función
 import re
+
 def to_camel_case(text):
-    # para el reto de codewarrior la funcion pide evaluar si la cadena es esta vacia
+    # Comprobamos si la cadena de texto es vacía
     if not text:
-        text += ''
+        text += ''  # Si es vacía, la dejamos como está y la retornamos
         return text
     
-    # la linea de codigo siguiente depende de la libreria (re) que hay que importar
-    # busca [-_], remplaza por " ", en la cadena: text
-    palabra_1 = re.sub('[-_]'," ",text)
+    # Usamos la librería 're' para reemplazar guiones y guiones bajos por espacios
+    palabra_1 = re.sub('[-_]', " ", text)
 
-    # split() divide una cadena en una lista de cadenas basada en un separador
+    # Usamos split() para dividir la cadena en palabras
     palabra_2 = palabra_1.split()
 
-    # creo una lista que devolvere y asigno lo que esta en palabra_2 en el indice 0
+    # Inicializamos la variable donde guardaremos el resultado en formato CamelCase
     palabra_camelCase = palabra_2[0]
     
-    # cre un loop que recorrera la lista desde la posicion 1 hasta el tamaño 
-    # de la lista dado por la funcion len() con esto evito iterar con el contenido
-    # del indice 0 y asi obtengo lo deseado
+    # Recorremos las palabras a partir de la segunda y las capitalizamos
     for i in range(1, len(palabra_2)):
         palabra_camelCase += palabra_2[i].capitalize()
 
-    # imprimo para visualizar el resultado 
+    # Imprimimos el resultado para visualizarlo
     print(palabra_camelCase)
     
-    # retorno el resultado
+    # Retornamos el resultado en formato CamelCase
     return palabra_camelCase
 
-to_camel_case("the-stealth-warrior")
-to_camel_case("The_Stealth_Warrior")
-to_camel_case("The_Stealth-Warrior")
+# Ejemplos de uso de la función
+to_camel_case("the-stealth-warrior")  # Debe imprimir "theStealthWarrior"
+to_camel_case("The_Stealth_Warrior")   # Debe imprimir "TheStealthWarrior"
+to_camel_case("The_Stealth-Warrior")   # Debe imprimir "TheStealthWarrior"
+
+
+
+# Post    a quedado mejor asi explicado :-)
