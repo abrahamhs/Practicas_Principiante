@@ -1,1 +1,1 @@
-En esta carpeta estan mis ejercios propuestos por codewarrior la llamadas katas para hacerlo tipo reto creare dos carpetas donde dare el probelema a resolver e la kata y la otra carpeta contendran las soluciones.
+En esta carpeta estan mis ejercios propuestos por codewarrior la llamadas katas para hacerlo tipo reto creare dos carpetas donde dare el probelema a resolver de la kata y la otra carpeta contendran las soluciones.
