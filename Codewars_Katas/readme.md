@@ -16,5 +16,4 @@ En esta carpeta, comparto las Katas que estoy desarrollando mientras perfecciono
 
 Y finalmente, quiero recordarte que la verdadera destreza en la programación se forja resolviendo problemas, expresando soluciones a través de líneas de código. Así que, ¡sigue tu camino de adquirir destreza y conocimientos! El mundo de la programación es un viaje emocionante, y cada reto superado te acerca un paso más a la maestría.
 
-¡Únete a la comunidad de Codewars y desafía tus límites en el mundo de la programación!
 
