@@ -22,10 +22,15 @@ Ejemplos:
 "The_Stealth-Warrior" ---> "TheStealthWarrior"
 
 """
-import re
+
 
 # Defino el nombre de la funcion
+import re
 def to_camel_case(text):
+    # para el reto de codewarrior la funcion pide evaluar si la cadena es esta vacia
+    if not text:
+        return None
+    
     # la linea de codigo siguiente depende de la libreria (re) que hay que importar
     # busca [-_], remplaza por " ", en la cadena: text
     palabra_1 = re.sub('[-_]'," ",text)
@@ -41,7 +46,7 @@ def to_camel_case(text):
     # del indice 0 y asi obtengo lo deseado
     for i in range(1, len(palabra_2)):
         palabra_camelCase += palabra_2[i].capitalize()
-        
+
     # imprimo para visualizar el resultado 
     print(palabra_camelCase)
     
