@@ -59,4 +59,4 @@ to_camel_case("The_Stealth-Warrior")   # Debe imprimir "TheStealthWarrior"
 
 
 
-# Post    a quedado mejor asi explicado :-)
+# Post    Se entiende mejor como se desarrolla el código :-)
