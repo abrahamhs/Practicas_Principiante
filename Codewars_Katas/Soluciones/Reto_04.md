@@ -6,12 +6,6 @@
 
 El objetivo de esta función es calcular la persistencia multiplicativa de un número positivo. La persistencia multiplicativa es el número de veces que debes multiplicar los dígitos de un número hasta llegar a un solo dígito.
 
-**Ejemplo:**
-
-- `persistence(39)` debe devolver 3 (porque 3*9 = 27, 2*7 = 14, 1*4 = 4 y 4 tiene un solo dígito).
-- `persistence(999)` debe devolver 4 (porque 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12 y finalmente 1*2 = 2).
-- `persistence(4)` debe devolver 0 (porque 4 ya es un número de un solo dígito).
-
 **Código:**
 
 ```python
