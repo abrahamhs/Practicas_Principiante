@@ -22,3 +22,32 @@ Ejemplos:
 "The_Stealth-Warrior" ---> "TheStealthWarrior"
 
 """
+import re
+
+# Defino el nombre de la funcion
+def to_camel_case(text):
+    # la linea de codigo siguiente depende de la libreria (re) que hay que importar
+    # busca [-_], remplaza por " ", en la cadena: text
+    palabra_1 = re.sub('[-_]'," ",text)
+
+    # split() divide una cadena en una lista de cadenas basada en un separador
+    palabra_2 = palabra_1.split()
+
+    # creo una lista que devolvere y asigno lo que esta en palabra_2 en el indice 0
+    palabra_camelCase = palabra_2[0]
+    
+    # cre un loop que recorrera la lista desde la posicion 1 hasta el tamaño 
+    # de la lista dado por la funcion len() con esto evito iterar con el contenido
+    # del indice 0 y asi obtengo lo deseado
+    for i in range(1, len(palabra_2)):
+        palabra_camelCase += palabra_2[i].capitalize()
+        
+    # imprimo para visualizar el resultado 
+    print(palabra_camelCase)
+    
+    # retorno el resultado
+    return palabra_camelCase
+
+to_camel_case("the-stealth-warrior")
+to_camel_case("The_Stealth_Warrior")
+to_camel_case("The_Stealth-Warrior")
