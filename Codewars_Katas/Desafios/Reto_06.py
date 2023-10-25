@@ -25,5 +25,4 @@ Examples
 "(}"       =>  False
 "[(])"     =>  False
 "[({})](]" =>  False
-
 """
